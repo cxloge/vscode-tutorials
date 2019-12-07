@@ -8,10 +8,10 @@ VS Code 则选择了一种相对轻量，而且大家都易于理解的方式，
 
 当你第一次打开 VS Code 的时候，工作台中还没有打开任何文件夹。这时候在欢迎界面的左上方，你能够看到：“新建文件”和“打开文件夹”等这样的快捷键。
 
-![VS Code是如何管理文件和文件夹](https://img.geek-docs.com/vscode/tutorials/vscode-manage-file-foler-01.png)
+![VS Code是如何管理文件和文件夹](image/vscode-manage-file-foler-01.png)
 未打开文件夹，状态栏为紫色
 
 这时候请注意工作台最下方的状态栏，当 VS Code 没有打开任何文件夹的时候，它的颜色是紫色的。而如果在工作台中打开了某个文件夹，状态栏的颜色就会变成蓝色。
 
-![VS Code是如何管理文件和文件夹](https://img.geek-docs.com/vscode/tutorials/vscode-manage-file-foler-02.png)
+![VS Code是如何管理文件和文件夹](image/vscode-manage-file-foler-02.png)
 打开文件夹后，状态栏变成蓝色

@@ -39,11 +39,11 @@ JavaScript
 
 然后打开命令面板，执行 “切换开关自动附加” （Toggle Auto Attach）命令；
 
-![VSCode Node.js的支持](https://img.geek-docs.com/vscode/language/js-nodejs-17.gif)
+![VSCode Node.js的支持](image/js-nodejs-17.gif)
 
 然后我们在 index.js 的第 15 行插入一个断点。
 
-![VSCode Node.js的支持](https://img.geek-docs.com/vscode/language/js-nodejs-18.gif)
+![VSCode Node.js的支持](image/js-nodejs-18.gif)
 
 最后，我们打开集成终端，输入 Node.js 的调试命令：
 
@@ -55,7 +55,7 @@ JavaScript
 
 可以看到 VS Code 立刻进入了调试模式，然后在第 15 行停了下来。
 
-![VSCode Node.js的支持](https://img.geek-docs.com/vscode/language/js-nodejs-19.gif)
+![VSCode Node.js的支持](image/js-nodejs-19.gif)
 
 所以，如果你平时就是使用 JavaScript 直接写 Node.js，相信这个命令肯定能给你省去很多调整 `launch.json` 的麻烦。
 
@@ -67,11 +67,11 @@ Node.js 调试的 Logpoints 功能，就是将 console.log 和断点结合起来
 
 首先我们在第 12 行行号前右击，从上下文菜单里选择“添加记录点”，然后从左侧的选择列表里，选择表达式。在输入框里输入我们想要输出的内容并且用花括号包裹 `{ str + “!” }`，按下回车。
 
-![VSCode Node.js的支持](https://img.geek-docs.com/vscode/language/js-nodejs-20.gif)
+![VSCode Node.js的支持](image/js-nodejs-20.gif)
 
 接着，我们 F5 调试当前这个文件，选择 Node.js 这个环境。由于我们其实并没有真正创建断点，所以代码很快执行结束。我们不妨打开调试面板看看。
 
-![VSCode Node.js的支持](https://img.geek-docs.com/vscode/language/js-nodejs-21.gif)
+![VSCode Node.js的支持](image/js-nodejs-21.gif)
 
 我们能在调试面板里看到两个输出结果：
 

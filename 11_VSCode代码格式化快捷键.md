@@ -4,9 +4,9 @@
 
 你可以按下 “Option + Shift + F” （Windows 上是 Alt + Shift + F）来对整个文档进行格式化，VS Code 也会根据你当前的语言，选择相关的插件。当然，前提条件是你已经安装了相关插件。
 
-![VSCode 代码格式化快捷键](https://img.geek-docs.com/vscode/shortcut/shortcut-adv-9.gif)
+![VSCode 代码格式化快捷键](image/shortcut-adv-9.gif)
 
 你也可以选中一段代码，然后按下 “Cmd + K Cmd + F” （Windows 上是 Ctrl + K Ctrl + F），这样只有这段被选中的代码才会被格式化。
 
-![VSCode 代码格式化快捷键](https://img.geek-docs.com/vscode/shortcut/shortcut-adv-10.gif)
+![VSCode 代码格式化快捷键](image/shortcut-adv-10.gif)
 

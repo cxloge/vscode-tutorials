@@ -71,13 +71,13 @@ GitLens 作者 Eric Amodio 又出[一款力作](https://marketplace.visualstudio
 ### Rainbow Brackets
 
 不管你是不是写函数式语言，当你的代码中有比较多的花括号时，要保证它们对称可以说是非常困难了。[Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)这个插件，为同一对花括号指定一个单独的配色，这样你就能够轻松地一眼看出花括号的配对了。
-![VSCode 经典插件推荐](https://img.geek-docs.com/vscode/plugin/good-plugin-1.png)
+![VSCode 经典插件推荐](image/good-plugin-1.png)
 
 ### Indent Rainbow
 
 上面的 Rainbow brackets 是给花括号加上多种颜色，而 [Indent Rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)则是为你的代码缩进提供颜色上的提示：
 
-![VSCode 经典插件推荐](https://img.geek-docs.com/vscode/plugin/good-plugin-2.png)
+![VSCode 经典插件推荐](image/good-plugin-2.png)
 
 这两个插件有异曲同工之妙，当然我还是建议写代码的时候，不要有太多的层级。
 
@@ -85,13 +85,13 @@ GitLens 作者 Eric Amodio 又出[一款力作](https://marketplace.visualstudio
 
 既然说到颜色，就不得不提[Pigment](https://marketplace.visualstudio.com/items?itemName=jaspernorth.vscode-pigments) 这个插件。在介绍择色器（Color Picker）的时候我介绍过，VS Code会在每个颜色前面加上一个方块，用方块来展示代码所对应的颜色。Pigment 则是将颜色渲染在这段代码的下面，我自己还是蛮喜欢这种方式的。
 
-![VSCode 经典插件推荐](https://img.geek-docs.com/vscode/plugin/good-plugin-3.png)
+![VSCode 经典插件推荐](image/good-plugin-3.png)
 
 ### Import Cost
 
 JavaScript 经常被吐槽的一个地方，就是大家对 npm 库的使用程度非常高，经常为了一个简单的功能，引入了几兆甚至十几兆的 npm 包。[Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)这个插件，很好地在代码中给我们以提示，告诉我们引入的某个包，它最终会导致整个项目的大小增加多少。
 
-![VSCode 经典插件推荐](https://img.geek-docs.com/vscode/plugin/good-plugin-4.png)
+![VSCode 经典插件推荐](image/good-plugin-4.png)
 
 ## 调试：Debugger for Chrome
 
@@ -135,7 +135,7 @@ macOS 用户对 Code Runner 这个应用一定非常熟悉了，你可以使用 
 当你找到了自己心仪的插件后，并且想分享给你的同事，除了把名字告诉他们外，还有什么别的办法没有？
 当然有！你可以通过在项目的 .vscode 文件夹下，创建一个文件 extensions.json。你很熟悉了，这又是一个 JSON 文件，在这个 JSON 文件里，你只需提供一个键（key） recommendations，然后将你想要推荐给这个项目的其他工程师的插件的 ID 们，全部放入到这个数组中。当他们打开这个项目，而且并没有安装这些插件时，VS Code就会给他们提示了。
 
-![VSCode 经典插件推荐](https://img.geek-docs.com/vscode/plugin/good-plugin-5.png)
+![VSCode 经典插件推荐](image/good-plugin-5.png)
 除了在 .vscode/extensions.json 文件推荐插件，如果你在使用多文件夹工作区（multi-root workspace），也可以在多文件夹工作区的配置文件里添加如下的设置：
 
 ```json

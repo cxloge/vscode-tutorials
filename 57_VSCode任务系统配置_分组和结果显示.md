@@ -36,7 +36,7 @@ JSON
 
 在这个例子里，我们把它设置为了 “test”。那么，当我们在命令面板里搜索 “运行测试任务” (Run Test Task) 时，只有这个任务会被显示出来。
 
-![VSCode 任务系统配置 - 分组和结果显示](https://img.geek-docs.com/vscode/task-system/workflow-01-10.gif)
+![VSCode 任务系统配置 - 分组和结果显示](image/workflow-01-10.gif)
 
 如果我们把这个分组 group 改为 “build”，那么在我们执行 “运行生成任务” （Run Build Task）时，则同样能够看到它。
 
@@ -55,7 +55,7 @@ JSON
 
 当把“group”改成以上的值后，再当我们执行 “运行测试任务” (Run Test Task) 命令时，我们会发现这条测试任务被直接执行了。
 
-![VSCode 任务系统配置 - 分组和结果显示](https://img.geek-docs.com/vscode/task-system/workflow-01-11.gif)
+![VSCode 任务系统配置 - 分组和结果显示](image/workflow-01-11.gif)
 
 而 “运行生成任务” 就更方便了，这个命令已经绑定了一组快捷键。我们只需按下 `Cmd + Shift + B` （Windows 上是 `Ctrl + Shift + B`）就可以自动运行默认的那个生成任务了（build task）。
 

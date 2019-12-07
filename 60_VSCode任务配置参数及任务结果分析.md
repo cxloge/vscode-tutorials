@@ -226,7 +226,7 @@ JSON
 
 这个任务有个新的属性，叫做 `dependsOn`。它指定了“compile”这个任务依赖于 “frontend” 和 “backend” 这两个脚本，而这个任务本身并没有制定任何的命令 （command），同时我们还制定了这个任务为默认的生成任务（build），所以当我们按下 Cmd + Shift + B，我们就能够看到“frontend” 和 “backend” 这两个任务都被触发执行了。
 
-![VSCode 任务配置参数及任务结果分析](https://img.geek-docs.com/vscode/tutorials/vscode-task-0001.gif)
+![VSCode 任务配置参数及任务结果分析](image/vscode-task-0001.gif)
 
 通过多任务的设置，我们就真正做到一键运行了。不过要注意，这个功能在 VS Code 里叫做 Compound tasks ，这可能并不是一个特别好记的英文名字。
 

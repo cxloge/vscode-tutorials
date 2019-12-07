@@ -35,12 +35,12 @@ workbench.colorCustomizations 有很多属性，它们的键（key）就是代�
 
 而它们的值则是颜色的 HEX 值。此时当你保存文件后，你会发现 VS Code 发生了变化。
 
-![VSCode 修改工作区配色](https://img.geek-docs.com/vscode/theme/theme-3.png)
+![VSCode 修改工作区配色](image/theme-3.png)
 
 没错，上面提到的这三个组件的背景色都立刻发生了变化。而你在设置里添加的这三组键值（key-value pair），跟主题插件里的书写方式一模一样。
 
 已经知道了去哪里书写这些颜色配置，下面就是要知道有哪些可以修改的值了。最简单的方式当然是通过自动补全。
 
-![VSCode 修改工作区配色](https://img.geek-docs.com/vscode/theme/theme-4.gif)
+![VSCode 修改工作区配色](image/theme-4.gif)
 
 VS Code 自动补全列表提供了所有可以修改的颜色，而如果你希望对此有个全的了解再进行书写，你也可以阅读[官方文档](https://code.visualstudio.com/docs/getstarted/theme-color-reference)。

@@ -30,19 +30,19 @@ JavaScript
 
 今天我们继续使用一段 JavaScript 代码来做例子。当我们在编辑器里输入 `console.` 之后，VS Code 里的 JavaScript 语言服务，会给我们建议与 `console` 相关的 API。
 
-![VS Code提示的与console相关的API](https://img.geek-docs.com/vscode/language-support/vscode-api.gif)
+![VS Code提示的与console相关的API](image/vscode-api.gif)
 
 当我们找到了合适的函数后，按下 Tab 键或者回车键就可以将其补全。
 
-![补全选中的函数](https://img.geek-docs.com/vscode/language-support/select-auto-complete-function.gif)
+![补全选中的函数](image/select-auto-complete-function.gif)
 
 如果我们偶尔觉得这个自动补全窗口是多余的，希望暂时不看到它，可以按下 Escape 键将其隐藏。后续如果希望再次看到这个窗口，除了通过打字来将其调出以外，我们还可以按下 “Ctrl + 空格键”来手动地调出建议列表。
 
-![通过“Ctrl + 空格键”手动调出建议列表](https://img.geek-docs.com/vscode/language-support/ctrl-tab-suggest-list.gif)
+![通过“Ctrl + 空格键”手动调出建议列表](image/ctrl-tab-suggest-list.gif)
 
 刚才我们提到，VS Code 会根据我们输入的字符在这个建议列表里进行过滤。同时，这个过滤是允许我们犯一点小错误的，比如打字特别快的时候少打一个字母，VS Code 也能处理这个情况。比如在下面的动图里，我想使用 console 里的 debug 函数，但是我只打了 db 两个字母，建议列表依然为我提供了 debug 这个选项。
 
-![输入 db ，建议窗口提示 debug](https://img.geek-docs.com/vscode/language-support/db-suggest-debug.gif)
+![输入 db ，建议窗口提示 debug](image/db-suggest-debug.gif)
 
 ## VS Code自动补全设置
 

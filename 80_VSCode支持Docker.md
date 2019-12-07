@@ -23,11 +23,11 @@
 VS Code 的 Docker 支持，是由插件来完成的，这个插件是 VS Code 官方团队维护的，所以它的发布者是 Microsoft。你可以在市场上[点击下载](https://marketplace.visualstudio.com/search?term=docker&target=VSCode&category=All%20categories&sortBy=Relevance)，也可以直接在 VS Code 插件视图里搜索 Docker 进行安装。
 
 当然了，这个插件的正确运行，离不开一个正确安装的 Docker 环境。关于 Docker 的安装，还请参考[官方文档](https://www.docker.com/get-started)。
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-1.png)
+![VSCode 支持Docker](image/docker-1.png)
 
 安装完Docker插件后，在活动栏上，我们就能够看到一个集装箱的图标，点击它，我们就能够看到 Docker 相关的信息了。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-2.png)
+![VSCode 支持Docker](image/docker-2.png)
 
 在这个视图中，我们能够看到以下信息：
 
@@ -37,21 +37,21 @@ VS Code 的 Docker 支持，是由插件来完成的，这个插件是 VS Code �
 
 当我们在 image 上右击时，能够看到一系列的操作，比如查看 image 的信息、发布这个 image、运行 image 等。当然，这些操作同样也可以在命令面板中找到。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-3.png)
+![VSCode 支持Docker](image/docker-3.png)
 
 我们在 containers 上右击调出的上下文菜单就要简单一些，有三个命令：删除 container、重启 container以及查看这个 container 运行的日志。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-4.png)
+![VSCode 支持Docker](image/docker-4.png)
 
 ## Dockerfile
 
 除了提供了一个视图，Docker 插件还能够对 Dockerfile 文件进行语法高亮。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-5.png)
+![VSCode 支持Docker](image/docker-5.png)
 
 而且也支持自动补全，这样我们就可以通过建议列表来输入 Dockerfile 中的命令了。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-6.gif)
+![VSCode 支持Docker](image/docker-6.gif)
 
 ## 构建和运行
 
@@ -72,19 +72,19 @@ CMD [ "htop" ]
 
 接下来，我们就可以打开命令面板，执行 “Docker: Build image” 命令。这个命令会打开集成终端，然后执行 docker build 命令。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-7.gif)
+![VSCode 支持Docker](image/docker-7.gif)
 
 ### docker run
 
 生成了 image 之后，我们就可以通过这个 image 来创建 container 了。此时，我们可以通过 Docker 视图的上下文菜单来生成“运行 container”，也可以从命令面板中，运行 “Docker: Run” 命令。然后 VS Code 就会询问我们想要使用哪个 image。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-8.gif)
+![VSCode 支持Docker](image/docker-8.gif)
 
 ### docker run interactive
 
 除了 Run 这个命令外，另一个非常有用的命令就是 Run Interactive。通过这个命令，**我们可以创建并运行 container，然后进入到这个 container 的 shell 环境汇总**。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-9.gif)
+![VSCode 支持Docker](image/docker-9.gif)
 
 在上面的例子里，我们在 container 里运行的命令是 htop，也就是实时监控系统运行的情况；当我们执行了 “Run interactive” 命令，运行了 contaienr 并且进入到它的 shell 环境中后，我们就立刻看到了 htop 的运行界面。
 
@@ -109,7 +109,7 @@ CMD [ "pwd" ]
 
 有了新的 image 后，接下来就是从 “vscode-docker-sample2:latest” 创建一个新的 container。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-10.gif)
+![VSCode 支持Docker](image/docker-10.gif)
 
 在运行 docker run 的时候，如果你有留意左侧视图里 “containers” 这个列表的话，你会发现，一个名叫 vscode-docker-sample2 的 container 出现了一下然后又消失了。这是为什么呢？
 
@@ -131,7 +131,7 @@ docker run -d vscode-docker-sample2:latest
 
 我们可以在这个 container 上右击调出上下文菜单，选择 Show logs 命令。接着，我们就能够看到这个 container 中 pwd 命令执行的结果了，就是 ‘/’。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-11.gif)
+![VSCode 支持Docker](image/docker-11.gif)
 
 ## Docker Compose
 
@@ -163,7 +163,7 @@ JavaScript
 
 我们只需调出命令面板，然后搜索执行命令 “Docker: Add docker files to workspace”。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-12.gif)
+![VSCode 支持Docker](image/docker-12.gif)
 
 接着 VS Code 会问我们想要创建什么环境的 Docker image。这里我们选择 Node.js，这样就可以运行上面创建的 index.js 文件了。
 
@@ -234,7 +234,7 @@ services:
 
 在有了这三个配置文件后，要想构建并且运行 container 就简单了。我们不再需要先执行 “Docker: build image ” 再运行 “Docker: run” 了，而是直接运行单个命令——“Docker: compose up” 即可。
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-13.gif)
+![VSCode 支持Docker](image/docker-13.gif)
 
 运行 “Docker: compose up” 后，我们需要选择使用哪个 compose 配置文件。只要准备好了 compose 配置文件，那么在 VS Code 中操作就非常简单了，一共只有三个命令：
 
@@ -244,7 +244,7 @@ services:
 
 如果你想看看 VS Code 是不是真的成功运行了 container，你可以从 Docker 的视图里，找到这个新创建出来的 container，查看它的 log。你能够看到以下结果：
 
-![VSCode 支持Docker](https://img.geek-docs.com/vscode/docker/docker-14.png)
+![VSCode 支持Docker](image/docker-14.png)
 index.js 在 container 里被成功地运行了，而且输出了 Hello World。
 
 ## 调试

@@ -4,10 +4,10 @@
 
 **图1是使用没有修改过任何编辑器设置的 VS Code 打开的一个 JavaScript 的文件**
 
-![VSCode 缩进参考线和垂直标尺](https://img.geek-docs.com/vscode/tutorials/optimized-editor-original.png)
+![VSCode 缩进参考线和垂直标尺](image/optimized-editor-original.png)
 
 **图2是使用经过了不少的个性化定制的编辑器打开的同一个文件**
-![VSCode 缩进参考线和垂直标尺](https://img.geek-docs.com/vscode/tutorials/optimized-editor-after.png)
+![VSCode 缩进参考线和垂直标尺](image/optimized-editor-after.png)
 
 在图1中，第二行到第六行代码的中间，从内到外你能够依次看到两个竖线。这两个竖线就是缩进参考线。编辑器会根据你指定的制表符的长度，来决定缩进参考线的位置。这样你就可以非常清楚地知道代码有没有正确地缩进，而且也方便你区分出不同代码块之间的层级关系。这个功能是可以通过 `editor.renderIndentGuides` 来控制开关的。
 

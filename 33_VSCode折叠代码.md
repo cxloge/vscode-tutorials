@@ -22,17 +22,17 @@ JavaScript
 
 当我们把鼠标移动到行号的附近时，就能够看到一个类似于减号的标记，同时鼠标指针变成了手的形状。
 
-![鼠标移动到行号附近](https://img.geek-docs.com/vscode/editor/01.gif)
+![鼠标移动到行号附近](image/01.gif)
 鼠标移动到行号附近
 
 此时若我们单击这个图标，就能够看到 foo函数内部的这行代码消失了，取而代之的则是三个点的缩略图。
 
-![代码被折叠](https://img.geek-docs.com/vscode/editor/02.gif)
+![代码被折叠](image/02.gif)
 代码被折叠
 
 在代码被折叠后，行号附近的这个图标就变成了一个加号的形状，若再点击这个加号就能把这段代码展开。
 
-![折叠代码被展开](https://img.geek-docs.com/vscode/editor/03.gif)
+![折叠代码被展开](image/03.gif)
 
 以上内容就是代码折叠最基本的概念，下面介绍下VSCode基于语言定义的代码折叠。
 
@@ -59,7 +59,7 @@ Java
 
 其中，// region Main 申明了一个可折叠代码块的开始，而// endregion则申明了这段可折叠代码的结束。当我们把鼠标指针移动到行号附近时，我们能够看到三个加号，说明这段代码包含了三个可折叠的代码块，两个是由花括号控制的，一个则是基于特殊的语言的定义。
 
-![通过对应的关键词来控制Java 代码的折叠](https://img.geek-docs.com/vscode/editor/04.gif)
+![通过对应的关键词来控制Java 代码的折叠](image/04.gif)
 
 至于哪个语言可以使用哪些关键词来控制代码的折叠，还请参考 [VS Code 的官方文档](https://code.visualstudio.com/docs/editor/codebasics#_folding)。
 

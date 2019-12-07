@@ -6,7 +6,7 @@
 
 讲到这里，你可能想到了，如果你在使用的语言已经有一个命令行的调试工具，那你也可以通过写一个调试插件，把这个命令行的调试器通过 DAP 连接到 VS Code 中，然后就能够借助 VS Code 这套 UI 来进行图形化的调试了。没错，调试插件很大程度上就是在进行这样的 “翻译” 工作。下面这张 VS Code DAP 的流程图也很好地做出了解释：
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-1.png)
+![VSCode 代码调试器介绍](image/debugger-1.png)
 
 当然，尽管我们在编辑器中提供了各种调试的界面和功能，但这并不意味着每一个调试插件把它们全都实现了。这可能是因为插件还没有足够成熟，也有可能是受限于底层的调试器。
 
@@ -43,11 +43,11 @@ JavaScript
 
 VS Code 中有一个专门的用于管理调试功能的视图。我们可以点击界面左侧“昆虫”（也就是 bug 啦）形状的按钮，或者按下 “Cmd + Shift + D” （Windows 上是 Ctrl + Shift + D）来唤出调试视图。
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-2.png)
+![VSCode 代码调试器介绍](image/debugger-2.png)
 
 在视图的最上侧，有个绿色的箭头按钮。这个按钮是用于启动调试器的。但是在上面的截图里，你可以看到在绿色箭头的右侧写着 “没有配置”。这说明现在 VS Code 还不知道该使用什么调试器来调试当前的代码。此时点击这个按钮或者按下 F5，我们能够看到一个列表。
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-3.png)
+![VSCode 代码调试器介绍](image/debugger-3.png)
 
 这个列表有两个选项，一个是 Chrome，另一个则是 Node.js。其中，Node.js 的调试器是 VS Code 默认就支持的，而 Chrome 这个选项则是因为我安装了 Chrome 调试相关的插件 [Debugger for Chrome – Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) 。 为了便于理解，这里我会选择 Node.js 。
 
@@ -57,19 +57,19 @@ VS Code 中有一个专门的用于管理调试功能的视图。我们可以点
 
 首先，我们将鼠标移动到第五行代码的行号前面，点击鼠标左键，我们能够看到一个红色的圆点被创建了出来，这就是断点。当然，我们也可以把光标移动到第五行，然后按下 F9，同样可以在第五行创建断点。
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-4.png)
+![VSCode 代码调试器介绍](image/debugger-4.png)
 
 此时，当我们再次点击调试视图上面的绿色箭头按钮，或者按下 F5，启动调试器，并且选择 Node.js ，VS Code 就会进入调试模式。
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-5.png)
+![VSCode 代码调试器介绍](image/debugger-5.png)
 
 我们能够看到界面中间出现了一个工具栏，用于控制代码的执行；左侧的调试视图，现在也展示了当前上下文里的变量、调用堆栈和所有创建的断点等。相信这些你早就已经非常熟悉了，这里我就不多加赘述。
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-6.png)
+![VSCode 代码调试器介绍](image/debugger-6.png)
 
 但是，如果工作区并没有任何打开的文件，那当我们再次按下 F5 进行调试，然后选择 Node.js 时，VS Code 会告诉我们 “找不到要调试的程序”。这句话什么意思呢？
 
-![VSCode 代码调试器介绍](https://img.geek-docs.com/vscode/debugger/debugger-7.png)
+![VSCode 代码调试器介绍](image/debugger-7.png)
 
 在没有任何配置的情况下，VS Code 的 Node.js 调试器，会尝试着去调试当前打开的文件，而如果当前没有任何的文件被打开的话，Node.js 调试器就不知道该调试哪个代码文件了。而且很多时候，我们的项目相对比较复杂，单个文件的调试还是相对太理想化了。为了解决这个问题，我们需要给 VS Code 提供一个配置文件，告诉调试器如何加载和调试代码。
 
@@ -79,7 +79,7 @@ VS Code 中有一个专门的用于管理调试功能的视图。我们可以点
 
 **VSCode 代码调试器配置launch.json介绍**，在调试视图的最上方，我们能够看到一个齿轮形状的按钮，它可以用于创建和修改 launch.json 文件。由于当前文件夹下没有 launch.json 文件，所以这个按钮的右上角有个红色的点，它告诉我们当前的调试配置有一点问题，让我们点击这个按钮。
 
-![VSCode 代码调试器配置launch.json介绍](https://img.geek-docs.com/vscode/debugger/debugger-8.gif)
+![VSCode 代码调试器配置launch.json介绍](image/debugger-8.gif)
 
 当我们按下按钮后，VS Code 询问我们想要创建什么项目的调试配置，这里我们再次选择 Node.js。然后我们就能够看到 .vscode 文件夹下 launch.json 文件被创建出来了，它的内容如下：
 
@@ -118,7 +118,7 @@ JSON
 
 到这一步，即使我们关闭掉编辑器里全部的文件，当我们按下 F5 ，也能够将 `Node.js` 代码调试起来了。
 
-![VSCode 代码调试器配置launch.json介绍](https://img.geek-docs.com/vscode/debugger/debugger-9.gif)
+![VSCode 代码调试器配置launch.json介绍](image/debugger-9.gif)
 
 ## 开发launch.json
 
@@ -126,7 +126,7 @@ JSON
 
 举个例子，在上面的 Node.js 调试配置里，有个属性叫做 request，它控制着我们运行调试器时是 launch 还是该 attach 。对于绝大部分调试器，这个属性都是有用的，所以 VS Code 预先定义好了 request 这个属性，然后要求每个调试配置都必须包含 request 这个属性，而且它的值必须是 launch 或者 attach 之一。
 
-![VSCode 代码调试器配置launch.json开发](https://img.geek-docs.com/vscode/debugger/debugger-10.png)
+![VSCode 代码调试器配置launch.json开发](image/debugger-10.png)
 
 我们在编辑器里打开 launch.json 这个文件时，能够看到request 这个属性的颜色是灰色的，这说明它是 VS Code 预先定义好的属性，每个调试器插件都会按照一样的方式去阅读和理解它的值。
 
@@ -140,19 +140,19 @@ JSON
 
 下面我们打开 launch.json ，在第十二行最后按下`Ctrl + Space`或者执行 “触发建议”这个命令，VS Code 立刻就会为我们唤出了建议列表。
 
-![VSCode 代码调试器配置launch.json开发](https://img.geek-docs.com/vscode/debugger/debugger-11.png)
+![VSCode 代码调试器配置launch.json开发](image/debugger-11.png)
 
 建议列表里的，就是调试插件们给我们提供的调试配置的模板了。模板的前缀就是它所属的语言或者插件名称，后面则是这个模板的类型。它们一般都有一段说明，介绍它大概是完成什么调试工作的。
 
 比如我已经安装了 Java 的插件，当我选择了 “Java Attach to Remote Program” 这一项时，我们能够看到它的描述是：
 
-![VSCode 代码调试器配置launch.json开发](https://img.geek-docs.com/vscode/debugger/debugger-12.png)
+![VSCode 代码调试器配置launch.json开发](image/debugger-12.png)
 
 “Add a new configuration for attaching to a running java program” ，它的意思是这个配置是用于将调试器 attach 到正在运行的 Java 程序上的。
 
 再或者我选择了 “Node.js: Gulp 任务“，它的作用是调试 Gulp 任务（Gulp 是 Node.js 的一个任务脚本工具），同时它还提示了我要确保项目里已安装本地 Gulp 脚本。
 
-![VSCode 代码调试器配置launch.json开发](https://img.geek-docs.com/vscode/debugger/debugger-13.png)
+![VSCode 代码调试器配置launch.json开发](image/debugger-13.png)
 
 就是这样，很多时候，模板可以帮助我们完成大部分的工作，然后我们只需要稍作修改就可以了。
 
@@ -160,7 +160,7 @@ JSON
 
 另一个能够帮助到我们的，就是在书写配置属性的时候使用自动补全功能。当我们在书写新的属性时，按下 `Ctrl + Space`，就能够唤出建议列表，建议列表里提供了当前调试配置里可以使用的所有属性，然后我们就可以按需选用了。
 
-![VSCode 代码调试器配置launch.json开发](https://img.geek-docs.com/vscode/debugger/debugger-14.png)
+![VSCode 代码调试器配置launch.json开发](image/debugger-14.png)
 
 ### 通用属性
 

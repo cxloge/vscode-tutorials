@@ -8,7 +8,7 @@
 
 首先，你打开欢迎界面，并且点击界面右侧的“界面概览”。
 
-![VSCode 工作台](https://img.geek-docs.com/vscode/tutorials/workbench-01.png)
+![VSCode 工作台](image/workbench-01.png)
 打开“界面概览”
 
 这时你能够看到，在默认设置下 VS Code 的左侧侧边栏有五个组件，它们分别是：
@@ -21,22 +21,22 @@
 
 如果有哪个功能是你不需要的话，你可以在 VS Code 的最左侧，右键打开上下文菜单，然后将那个组件隐藏。你还可以拖动这几个小图标，然后将这些功能按照你需要的方式排序。
 
-![VSCode 工作台](https://img.geek-docs.com/vscode/tutorials/workbench-02.png)
+![VSCode 工作台](image/workbench-02.png)
 管理视图的顺序和是否隐藏
 
 在侧边栏的最下角还有一个齿轮形状的按钮，它提供了一些 VS Code 系统管理常用的快捷键，点击打开后，你可以看到命令面板、设置、键盘快捷方式、管理扩展等等一系列快速入口。
 
-![VSCode 工作台](https://img.geek-docs.com/vscode/tutorials/workbench-03.png)
+![VSCode 工作台](image/workbench-03.png)
 最左下角的快速入口
 
 界面的最下面一行则是状态栏，顾名思义，这个组件的作用就是将当前文件夹、编辑器状态、代码版本、代码错误等的简略讯息呈现给你。除此之外，很多插件也会选择将信息呈现在状态栏上。
 
-![VSCode 工作台](https://img.geek-docs.com/vscode/tutorials/workbench-04.png)
+![VSCode 工作台](image/workbench-04.png)
 最下面的状态栏讯息
 
 不过“界面概览”并没有覆盖所有的组件，其中一个非常重要的部分就是面板（Panel），你可以在命令面板中执行“切换面板”命令来打开它。
 
-![VSCode 工作台](https://img.geek-docs.com/vscode/tutorials/workbench-05.png)
+![VSCode 工作台](image/workbench-05.png)
 面板
 
 打开后，你会看到面板的四个组件：**问题面板**、**输出面板**、**调试控制台**和**终端**。
@@ -61,5 +61,5 @@
 
 剩下还有两个 UI 组件。第一个是菜单栏，这个没有太多可以讲的，VS Code 把常用的命令按功能进行归类放到菜单中，这样你就可以使用操作系统支持的快捷方式进行搜索和访问。
 
-![VSCode 工作台](https://img.geek-docs.com/vscode/tutorials/workbench-06.png)
+![VSCode 工作台](image/workbench-06.png)
 搜索和访问菜单栏

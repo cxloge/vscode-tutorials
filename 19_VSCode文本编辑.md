@@ -6,7 +6,7 @@
 
 在移动的过程当中，我们能够在编辑器中看到一个由虚线构成的光标，当我们松开鼠标左键的时候，这段文本就会被移动到这个虚拟的光标所在的位置。
 
-![通过鼠标左键移动代码位置](https://img.geek-docs.com/vscode/mouse-operation/left-mouse-move-code.gif)
+![通过鼠标左键移动代码位置](image/left-mouse-move-code.gif)
 
 在上面的动图里，我们把 bar这个函数，从文档的末尾移动到了第四行。这个功能就相当于使用键盘进行的“剪切+粘贴”。
 
@@ -16,4 +16,4 @@
 
 你看，在移动鼠标的过程中，多按了个 Option 键（Windows 上是 Ctrl 键），操作结果就由原来的“剪切+粘贴”变为“复制+粘贴”了。
 
-![鼠标左键拖拽+Option键，复制粘贴代码块](https://img.geek-docs.com/vscode/mouse-operation/copy-paste-code.gif)
+![鼠标左键拖拽+Option键，复制粘贴代码块](image/copy-paste-code.gif)

@@ -4,12 +4,12 @@
 
 但是没有任何提示的话，你可能很长时间都不会发现命令面板。虽然它的可发现性（discoverability）不太好，但也是 VS Code 最重要的组件之一。在我看来，它是一个基于文本的交互界面。怎么理解这句话呢？你可以先通过快捷键 F1 或者 Cmd + Shift + P 打开命令面板，打开之后，命令面板的输入框里已经有一个字符：>（大于号） 。
 
-![VSCode 命令面板](https://img.geek-docs.com/vscode/tutorials/command-panel-01.png)
+![VSCode 命令面板](image/command-panel-01.png)
 F1 或者 Cmd + Shift + P打开命令面板
 
 你可能会好奇，这个大于号是干嘛用的呢？你可以回想一下在前面“编辑器 —> 快速代码跳转”文章里介绍的快速访问文件中的符号 ，当你按下 Cmd + Shift + O （Windows 上是 Ctrl + Shift + O）打开了命令面板，控制面板显示了当前文件里的所有符号，此时输入框里的第一个字符是 @。
 
-![VSCode 命令面板](https://img.geek-docs.com/vscode/tutorials/command-panel-02.png)
+![VSCode 命令面板](image/command-panel-02.png)
 Cmd + Shift + O打开命令面板快速访问符号
 
 看到这里你应该猜到了，命令面板是根据输入框里的第一个字符来决定提供什么功能的。你甚至不难猜出 VS Code 是怎么实现命令面板的，VS Code 会先处理输入框里的文本，然后根据第一个字符来选择不同的处理方案。
@@ -18,12 +18,12 @@ Cmd + Shift + O打开命令面板快速访问符号
 
 那么命令面板里一共支持多少不同的功能呢？这里你可以把输入框里的所有字符全部删掉，看看 VS Code 给你的提示。
 
-![VSCode 命令面板](https://img.geek-docs.com/vscode/tutorials/command-panel-03.png)
+![VSCode 命令面板](image/command-panel-03.png)
 删除输入框里的所有字符
 
 当输入框里没有任何的字符时，命令面板提供的功能是访问最近使用的文件。同时你会在输入框内看到一段提示文字：键入 “？”从此处获取有关可进行的操作的帮助。接下来，你就依照这个提示，输入问号。
 
-![VSCode 命令面板](https://img.geek-docs.com/vscode/tutorials/command-panel-04.png)
+![VSCode 命令面板](image/command-panel-04.png)
 在输入框里输入问号
 
 紧接着你就可以看到十几条选项，分别代表着你能在命令面板里使用的不同的功能。虽然有十几条选项，但是记住它们并不是太难。

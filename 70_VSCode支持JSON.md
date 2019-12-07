@@ -25,7 +25,7 @@ JSON
 
 这是因为 VS Code 为配置文件们都指定了一个特殊的 JSON 文件类型，称为`JSON with Comments`。你可以在状态栏的最右侧看到 VS Code 的这个特殊的语言类型。
 
-![VSCode JSON的支持](https://img.geek-docs.com/vscode/language/json-md-1.png)
+![VSCode JSON的支持](image/json-md-1.png)
 
 与此同时，JSON 的语言服务支持 [JSON Schema](http://json-schema.org/)。你可以通过 JSON Schema 规范 JSON 内容的格式，并且做一定程度的语法检查。我们可以先来看看如何给一个 JSON 文件指定 Schema。
 
@@ -68,7 +68,7 @@ JSON
 
 通过这两个示例，当我们在项目中使用 .babelrc 文件来书写 babel （一个 JavaScript 编译器）的配置时，就能获得正确的自动补全和警告了。
 
-![VSCode JSON的支持](https://img.geek-docs.com/vscode/language/json-md-2.gif)
+![VSCode JSON的支持](image/json-md-2.gif)
 
 到这里你可能会好奇，这个 schema 里的内容到底是什么呢？为什么它能够提供智能提示和检查呢？我们这个专栏的任务虽然不是教你如何掌握 JSON schema，但是我们还是可以来看看如何在 VS Code 里书写 JSON schema。我们先来看如下这个简单的例子：
 
@@ -97,14 +97,14 @@ JSON
 
 添加了这个设置后，你可以在当前打开的文件夹根目录下创建 `.myconfig` 文件，然后在编辑器中打开。这之后你需要点击状态栏最右侧的语言设置，默认情况下，VS Code 并不认识 `.myconfig` 文件，你需要点击这个语言设置，然后选择 JSON。
 
-![VSCode JSON的支持](https://img.geek-docs.com/vscode/language/json-md-3.gif)
+![VSCode JSON的支持](image/json-md-3.gif)
 
 然后你在 `.myconfig` 里书写 JSON 时，VS Code 就会给你提示 name 这个属性了。
 
-![VSCode JSON的支持](https://img.geek-docs.com/vscode/language/json-md-4.gif)
+![VSCode JSON的支持](image/json-md-4.gif)
 
 但如果你设置 name 的值时没有使用字符串，而是使用了数字，VS Code 则会提出警告。
 
-![VSCode JSON的支持](https://img.geek-docs.com/vscode/language/json-md-5.gif)
+![VSCode JSON的支持](image/json-md-5.gif)
 
 这就是一个最简单的 JSON schema 样例了。如果你正在工作的项目，有自己特殊的配置文件，而且这个配置的格式是 JSON，那你就不妨试试使用 JSON schema 来给这个文件添加规范；而如果你的同事们同样适用这个 JSON schema 的话，就能避免很多错误配置了。关于更多 JSON schema 的书写，还请阅读[官方文档](http://json-schema.org/) 。

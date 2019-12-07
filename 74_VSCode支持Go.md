@@ -2,7 +2,7 @@
 
 **VSCode 支持Go**，VS Code上的 Go 语言插件，是由微软官方推出的。Go 语言插件，是VS Code推出插件 API 时的首批插件，直到现在，也依然由VS Code团队成员进行维护开发，项目地址是 <https://github.com/microsoft/vscode-go> 作为 VS Code 团队维护的项目，GitHub issues 是它唯一的反馈渠道。要安装这个插件，你可以在VS Code的插件视图里搜索 Go，也可以通过[插件市场](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go)进行下载。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-1.png)
+![VSCode 支持Go](image/go-java-1.png)
 
 VS Code也是 Go 团队官方推荐的开发工具。
 
@@ -22,17 +22,17 @@ VS Code也是 Go 团队官方推荐的开发工具。
 
 启动后，如果你还没有设置过 GOPATH 的话，VS Code会提示你，你既可以在自己的系统环境变量里添加 GOPATH，也可以在当前项目的配置文件里配置 GOPATH。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-2.png)
+![VSCode 支持Go](image/go-java-2.png)
 
 设置正确的 GOPATH 后，VS Code就知道安装 Go 的 package 保存到哪个文件夹内了。
 
 紧接着VS Code又跳出多个提示。这些提示是告诉你，如果想要在VS Code中使用自动补全、代码跳转等功能，你需要安装额外的 Go 的 package。所以，这里我建议选择 Install All，之后如果你对某个 package 的效果不满意，也可以通过设置再进行修改的。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-3.png)
+![VSCode 支持Go](image/go-java-3.png)
 
 比如，在我的系统上，我将 GOPATH 设置为 /Users/penlv/code/prototypes/gopath。然后选择 Install All 后，我就能在输出面板里，看到 Go 插件将要安装的 packages。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-4.png)
+![VSCode 支持Go](image/go-java-4.png)
 
 不过值得注意的是，如果上面的安装失败了，输出窗口中会提供错误信息。因为，这一步操作，底层运行的命令行其实就是：
 
@@ -50,9 +50,9 @@ Go
 
 首先，你可以在 Go 代码中，进行代码跳转（Go To Definition）、自动补全（Auto Complete）以及获取悬浮信息（Hover）。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-5.gif)
+![VSCode 支持Go](image/go-java-5.gif)
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-6.gif)
+![VSCode 支持Go](image/go-java-6.gif)
 
 Go 插件默认是借助 [gocode](https://github.com/mdempsky/gocode)、[gogetdoc](https://github.com/zmb3/gogetdoc)和 [godef](https://github.com/rogpeppe/godef) 分析代码，然后提供这些信息的。
 
@@ -67,11 +67,11 @@ Go 插件默认是借助 [gocode](https://github.com/mdempsky/gocode)、[gogetdo
 
 当你使用这些参数来自动触发脚本时，Go 插件会将这些脚本的输出结果进行分析，然后将错误和警告放入到问题面板中。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-7.gif)
+![VSCode 支持Go](image/go-java-7.gif)
 
 默认情况下，当保存代码时，VS Code会自动给 Go 代码进行格式化。如果你不喜欢这个功能，也可以通过 go.formatOnSave 来取消。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-8.gif)
+![VSCode 支持Go](image/go-java-8.gif)
 
 ### 调试
 
@@ -79,11 +79,11 @@ Go 插件同样支持调试 Go 的代码，而其底层的 debugger 则是 delve
 
 和之前我们介绍的 Node.js 调试一样，如果没有 launch.json 的话，VS Code会默认调试当前文件。
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-9.gif)
+![VSCode 支持Go](image/go-java-9.gif)
 
 同样，Go 插件也提供了多个调试的模板
 
-![VSCode 支持Go](https://img.geek-docs.com/vscode/language/go-java-10.gif)
+![VSCode 支持Go](image/go-java-10.gif)
 
 ### Language Server（experimental）
 

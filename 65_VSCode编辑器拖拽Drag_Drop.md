@@ -6,16 +6,16 @@
 
 第二，就是使用鼠标。VS Code 有很不错的拖拽功能。比如你可以在编辑器组中对 Tab 进行拖拽，把它放到你想要的位置。
 
-![VSCode 编辑器拖拽 Drag & Drop](https://img.geek-docs.com/vscode/editor/editor-14.gif)
+![VSCode 编辑器拖拽 Drag & Drop](image/editor-14.gif)
 
 从上面的动图中你可以看到，在我们移动鼠标时，VS Code 会把释放鼠标后编辑器将会放置的位置显示了出来，十分直观。
 
 除了拖拽编辑器 Tab 以外，我们还可以从资源管理器里对文件进行拖拽；
 
-![VSCode 编辑器拖拽 Drag & Drop](https://img.geek-docs.com/vscode/editor/editor-15.gif)
+![VSCode 编辑器拖拽 Drag & Drop](image/editor-15.gif)
 
 同样的，从系统资源管理器里我们也能够把文件直接拖入 VS Code 中打开。
 
-![VSCode 编辑器拖拽 Drag & Drop](https://img.geek-docs.com/vscode/editor/editor-16.gif)
+![VSCode 编辑器拖拽 Drag & Drop](image/editor-16.gif)
 
 有了鼠标的拖拽功能，我们就能够从容应对 VS Code 相对灵活的布局系统了。

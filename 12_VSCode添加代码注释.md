@@ -6,8 +6,8 @@
 
 当你在 JavaScript 文件里按下 `Cmd + /`，VS Code 在这行代码前添加了两个 `/`。
 
-![VSCode 添加代码注释](https://img.geek-docs.com/vscode/shortcut/shortcut-adv-7.gif)
+![VSCode 添加代码注释](image/shortcut-adv-7.gif)
 
 当你在 CSS 文件里按下 `Cmd + /`，VS Code 则是在这行代码前添加了 `/*` ，再最后添加了 `*/`。
 
-![VSCode 添加代码注释](https://img.geek-docs.com/vscode/shortcut/shortcut-adv-8.gif)
+![VSCode 添加代码注释](image/shortcut-adv-8.gif)

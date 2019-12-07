@@ -151,17 +151,17 @@ HTML
 
 修改完配置后，当你在 CSS 文件里输入 `p10`， 然后按下 `Tab` 键时，`p10` 就会被替换成 `padding: 10px;`
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-9.gif)
+![VSCode 支持Emmet](image/css-emmet-9.gif)
 
 其次，你也可以在命令面板中搜索 “展开缩写”（Expand Abbreviation）并执行。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-10.gif)
+![VSCode 支持Emmet](image/css-emmet-10.gif)
 
 ### 建议列表
 
 如果你刚学习 Emmet，对 Emmet 的语法还不熟悉，那么你一定希望知道自己写的缩写，最终被展开时是什么效果。VS Code 的建议列表已经做到了这一点，当你在编辑器里书写缩写时，你能够实时地看到 Emmet 给的展开建议。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-11.gif)
+![VSCode 支持Emmet](image/css-emmet-11.gif)
 
 如果你不希望在建议列表中使用 Emmet 的话，也可以通过配置”emmet.showExpandedAbbreviation”: “never”来禁用。
 
@@ -177,17 +177,17 @@ HTML
 
 然后你希望把它放到一个列表中。你当然可以先写一个 li，展开缩写，接着把上面的 HMTL 片段剪切到列表中。你也可以选中这段 HTML 片段，在命令面板中执行 “使用缩写包围”（Wrap with Abbreviation） 命令。接着，VS Code 就会显示一个输入框，你可以在这个输入框内填入 Emmet 缩写，这个缩写展开后，会自动把我们选中的 HTML 放在其中。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-12.gif)
+![VSCode 支持Emmet](image/css-emmet-12.gif)
 
 在上面的动图中，相信你还发现了，当你在输入框中填入 Emmet 缩写时，编辑器里会自动根据最新的缩写进行更新，这样你就能够实时地预览 Emmet 缩写被展开后的效果了。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-13.gif)
+![VSCode 支持Emmet](image/css-emmet-13.gif)
 
 ### 多光标
 
 Emmet 操作同样也支持多光标，如果你创建了多个光标，你可以同时在它们上面执行 “使用缩写包围” 命令。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-14.gif)
+![VSCode 支持Emmet](image/css-emmet-14.gif)
 
 ### 其他操作
 
@@ -195,15 +195,15 @@ Emmet 操作同样也支持多光标，如果你创建了多个光标，你可�
 
 第一个就是在 open 节点和 close 节点之间进行跳转，命令是 “Emmet: 转制匹配对”。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-15.gif)
+![VSCode 支持Emmet](image/css-emmet-15.gif)
 
 第二个就是删除节点。在 HTML 中删除 HTML 节点最麻烦的就是你需要把开、关两个节点都删除掉，否则 HTML 结构就不完整了。通过命令 “Emmet：移除标签”，你就可以同时将开、关两个节点都删除掉。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-16.gif)
+![VSCode 支持Emmet](image/css-emmet-16.gif)
 
 你还可以通过 “Emmet：更新标签“来同时更新一对开关节点（open/close tag）。
 
-![VSCode 支持Emmet](https://img.geek-docs.com/vscode/language/css-emmet-17.gif)
+![VSCode 支持Emmet](image/css-emmet-17.gif)
 
 这些命令是不是在 HTML 编辑器时非常实用呢？
 

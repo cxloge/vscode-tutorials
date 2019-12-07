@@ -16,7 +16,7 @@
 
 为了保证你能有比较完整的 Java 开发体验，你可以下载插件包 [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)。
 
-![VSCode 支持Java](https://img.geek-docs.com/vscode/language/go-java-11.png)
+![VSCode 支持Java](image/go-java-11.png)
 
 这个插件包，包含了四个插件：
 
@@ -44,7 +44,7 @@
 
 当你打开一个 Java 项目后，你可以点击调试视图里的齿轮按钮，创建 launch.json 。选择了 Java 这个环境后，Java 插件会为我们创建两个调试的模板。
 
-![VSCode 支持Java](https://img.geek-docs.com/vscode/language/go-java-12.gif)
+![VSCode 支持Java](image/go-java-12.gif)
 
 第一个模板，就是调试本地的项目，要注意的是，你需要填写设置 mainClass，这个设置的值则是你想要调试的 Java Main Class，而且这个地址必须是这个类的完整地址，类似于 com.example.Main 。而第二个模板，则是将调试器 attach 到已经在调试中的 Java 代码，你则需要提供正在运行的调试器的地址（hostName）和端口（port）。
 
@@ -80,19 +80,19 @@ JSON
 
 接下来，我们看看 Java 的插件对 JUnit 测试的支持情况如何。当你打开一个 JUnit 测试时，Java Test Runner 这个插件就会被激活了。此时，在界面最左侧活动栏的最下面，多了一个按钮，点击这个按钮，你就能看到一个测试视图，这个视图里展示的就是当前项目中的所有测试。
 
-![VSCode 支持Java](https://img.geek-docs.com/vscode/language/go-java-13.png)
+![VSCode 支持Java](image/go-java-13.png)
 
 在这个视图中，你可以在测试项目上进行右击，调出上下文菜单，然后执行单个，或者多个测试。
 
-![VSCode 支持Java](https://img.geek-docs.com/vscode/language/go-java-14.gif)
+![VSCode 支持Java](image/go-java-14.gif)
 
 与此同时，在编辑器中，你可以看到每个测试的上方，都有 “Run Test” 和 “Debug Test” 等字样。通过点击它们，同样可以执行和调试测试。
 
-![VSCode 支持Java](https://img.geek-docs.com/vscode/language/go-java-15.png)
+![VSCode 支持Java](image/go-java-15.png)
 
 另外，在上图中，你还能够看到一个问号，它说明测试没有被正确执行。你可以点击它，这之后，VS Code则会打开一个新的编辑器，详细介绍这个测试相关的情况。
 
-![VSCode 支持Java](https://img.geek-docs.com/vscode/language/go-java-16.gif)
+![VSCode 支持Java](image/go-java-16.gif)
 
 当然，如果你觉得左侧的测试视图已经足够好用了，不希望在编辑器中再看到 “Run Test” 等字样，那你也可以通过 “editor.codelens” 将其关闭。
 

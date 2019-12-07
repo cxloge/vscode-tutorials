@@ -2,7 +2,7 @@
 
 **VSCode 是什么**，VS Code的全称是Visual Studio Code，但这全名实在是太长了，很多用户喜欢叫它VS Code。说起VS Code，官方定义它是一个免费的、开源的跨平台编辑器。之所以强调“编辑器”，我想是因为 VS Code 并无意成为一个全尺寸的集成开发环境，也就是IDE。
 
-![VSCode 是什么](https://img.geek-docs.com/vscode/what-is-vscode.png)
+![VSCode 是什么](image/what-is-vscode.png)
 
 很多人都把编辑器等同于IDE，其实从专业角度来讲并非这样。IDE 更为关注开箱即用的编程体验、对代码往往有很好的智能理解，同时侧重于工程项目，为代码调试、测试、工作流等都有图形化界面的支持，因此相对笨重，Java程序员常用的Eclipse定位就是IDE；而编辑器则相对更轻量，侧重于文件或者文件夹，语言和工作流的支持更丰富和自由，VS Code 把自己定位在编辑器这个方向上，但又不完全局限于此。
 

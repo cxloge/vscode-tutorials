@@ -24,8 +24,8 @@ JavaScript
 
 在VS Code中，你单击鼠标左键就可以把光标移动到相应的位置。而双击鼠标左键，则会将当前光标下的单词选中。连续三次按下鼠标左键，则会选中当前这一行代码。最后是连续四次按下鼠标左键，则会选中整个文档。
 
-![通过鼠标左键完成选中操作](https://img.geek-docs.com/vscode/mouse-operation/mouse-left-operation.gif)
+![通过鼠标左键完成选中操作](image/mouse-left-operation.gif)
 
 到这里你可能会问，如果我想要使用鼠标，选中其中的多行代码该怎么办？VS Code也考虑到了这个情况，在编辑器的最左边，显示的是每一行的行号。如果你单击行号，就能够直接选中这一行。如果你在某个行号上按下鼠标，然后上下移动，则能够选中多行代码。
 
-![拖动行号栏，选中指定代码行](https://img.geek-docs.com/vscode/mouse-operation/select-lines.gif)
+![拖动行号栏，选中指定代码行](image/select-lines.gif)

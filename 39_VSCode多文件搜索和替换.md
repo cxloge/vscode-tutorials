@@ -9,7 +9,7 @@
 
 多文件搜索的运行方法跟单文件搜索非常类似。单文件搜索，我们是通过按下`“Cmd+ F”` 来调出搜索窗口的，而多文件搜索则是通过按下 `“Cmd + Shift + F”` （Windows 上是 `Ctrl + Shift + F`）来调出多文件搜索的视图。
 
-![“Cmd + Shift + F” ，调出多文件搜索视图](https://img.geek-docs.com/vscode/editor/multiple-01.gif)
+![“Cmd + Shift + F” ，调出多文件搜索视图](image/multiple-01.gif)
 
 在这样一个视图中，我们看到了熟悉的搜索输入框，以及大小写敏感、全单词匹配和正则表达式三个配置按钮。搜索框的左侧则是下拉按钮，点击即可调出替换框。
 

@@ -5,14 +5,14 @@
 当然，这个功能也需要语言本身的支持。比如说当你在使用 TypeScript 时，按下 F12，就可以跳转到函数的定义处。
 
 F12跳转到函数定义的位置
-![F12跳转到函数定义的位置](https://img.geek-docs.com/vscode/language-support/f12-function-definition-jump.gif)
+![F12跳转到函数定义的位置](image/f12-function-definition-jump.gif)
 
 也可以按下 “Cmd + F12” （Windows 上是 Ctrl + F12），跳转到函数的实现的位置。
 
 Cmd + F12 跳转到函数实现的位置
-![Cmd + F12 跳转到函数实现的位置](https://img.geek-docs.com/vscode/language-support/ctrl-f12-function-impl.gif)
+![Cmd + F12 跳转到函数实现的位置](image/ctrl-f12-function-impl.gif)
 
 而在书写 JavaScript 时，因为并没有接口（interface）的概念，定义和实现恰好是相同的。
 
 JavaScript 里 F12 和 Cmd + F12 效果一样
-![JavaScript 里 F12 和 Cmd + F12 效果一样](https://img.geek-docs.com/vscode/language-support/js-ctrl-f12-f12-same.gif)
+![JavaScript 里 F12 和 Cmd + F12 效果一样](image/js-ctrl-f12-f12-same.gif)

@@ -40,11 +40,11 @@ CSS
 
 第一种添加多光标的方式，就是使用鼠标。在键盘上按住 “Option”（Windows 上是 Alt），然后鼠标点在第二个“5”之前，那么第二个光标就创建好了。现在你可以看到两个光标，第二个光标比第一个要细一点。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-1.png)
+![VSCode 多光标特性](image/multi-cursors-1.png)
 
 聪明的你肯定知道通过同样的方式来创建第三个光标。然后，按下右方向键，将光标们移动到 “5”的后面，输入“px”。这样，“5”后面就都已经加上“px”了，而这中间，你只做了一次输入。是不是很方便？
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-2.gif)
+![VSCode 多光标特性](image/multi-cursors-2.gif)
 
 ### 使用键盘
 
@@ -52,19 +52,19 @@ CSS
 
 首先你还是先移动光标到第一个“5”的前面。然后按下 “Cmd + Option + 下方向键”（Windows 上是 “Ctrl + Alt + 下方向键”），在当前光标的下面创建一个光标。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-3.png)
+![VSCode 多光标特性](image/multi-cursors-3.png)
 
 相信你已经看出来了，第二个光标，由于就在第一个光标的正下方，所以它不在第二行的“5”前面。不过没关系，我们有办法搞定它。先别急，你还是如法炮制，把第三个光标创建好。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-4.png)
+![VSCode 多光标特性](image/multi-cursors-4.png)
 
 下面你该尝试把光标移动到正确的位置啦。虽说现在三个光标的位置都是散乱的，没有什么规则，但你可以让它们移动到类似的位置：按下 “Cmd + 右方向键”（Windows 上是 End），这样它们就都移动到每一行的末尾了。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-5.png)
+![VSCode 多光标特性](image/multi-cursors-5.png)
 
 到这里问题就简单了，你只需按下 “左方向键” 将光标移动到 `5`的后面，然后输入 `px`即可完成整个操作。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-6.gif)
+![VSCode 多光标特性](image/multi-cursors-6.gif)
 
 对于这个样例而言，第一种方案比第二种要方便，但这两种方法解决问题的思路是一致的。前者通过鼠标操作，把光标移动到了你期望的位置，然后再执行别的操作；后者则是运用了 VS Code 内置的其他命令，把光标最终移动到你想要的位置。
 
@@ -80,11 +80,11 @@ CSS
 
 首先讲第一种，还是上面的代码，你把光标移动到数字“5”之前，按下 “Cmd + D”，这样第一个“5”就被选中了；然后再按一次 “Cmd + D”（Windows 上是 Ctrl + D），你可以看到，第二个“5”也被选中了。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-7.gif)
+![VSCode 多光标特性](image/multi-cursors-7.gif)
 
 “Cmd + D” 这个命令的作用是，第一次按下时，它会选中光标附近的单词；第二次按下时，它会找到这个单词第二次出现的位置，创建一个新的光标，并且选中它。这样只需要按下三次，你就选中了所有的“5”。这个时候你再按下 “右方向键”，输入“px”，即可完成任务。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-8.gif)
+![VSCode 多光标特性](image/multi-cursors-8.gif)
 
 之所以说这个方法特别，是因为它的适用情况比较特别：处理多次出现的“相同”单词。如果你要处理的文本并不是相同的，那么这个方法就不适用了。
 
@@ -92,7 +92,7 @@ CSS
 
 接下来讲讲第二种，是跟代码行批量处理有关，也还是用的前面的代码。首先你选择多行代码，然后按下 “Option + Shift + i” （Windows 上是 Alt + Shift + i），这样操作的结果是：每一行的最后都会创建一个新的光标。
 
-![VSCode 多光标特性](https://img.geek-docs.com/vscode/multi-cursor/multi-cursors-9.gif)
+![VSCode 多光标特性](image/multi-cursors-9.gif)
 
 同样的，这种方法是基于代码行的，如果你的需求是在同一行添加多个光标，那么就不适用了。
 
@@ -106,6 +106,6 @@ CSS
 
 不过，VS Code 中还有一个更加便捷的鼠标创建多光标的方式。当然，这首先要求你的鼠标拥有中键。你只需按下鼠标中键，然后对着一段文档拖出一个框，在这个框中的代码就都被选中了，而且每一行被选中的代码，都拥有一个独立的光标。
 
-![利用鼠标中键添加多光标](https://img.geek-docs.com/vscode/mouse-operation/multi-cursor.gif)
+![利用鼠标中键添加多光标](image/multi-cursor.gif)
 
 我们已经尝试了用多种方法去创建光标然后修改代码，现在我们又为鼠标用户多提供了一种更为便捷的操作方式。尝试掌握它们吧，我相信这些便捷操作肯定能为你的高效编程之路尽一份力的。

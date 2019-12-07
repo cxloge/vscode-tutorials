@@ -36,19 +36,19 @@ JavaScript
 
 **1、转到定义（F12）**
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-1.gif)
+![VSCode JavaScript的支持](image/js-nodejs-1.gif)
 
 **2、格式化文件（Format Document）**
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-2.gif)
+![VSCode JavaScript的支持](image/js-nodejs-2.gif)
 
 **3、符号跳转（Cmd + Shift + O）**
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-3.gif)
+![VSCode JavaScript的支持](image/js-nodejs-3.gif)
 
 **4、函数建议列表和参数建议**
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-4.gif)
+![VSCode JavaScript的支持](image/js-nodejs-4.gif)
 
 如果你是跟着专栏一章一章学习过来的话，相信你已经非常熟悉这些操作了。
 
@@ -86,7 +86,7 @@ JavaScript
 
 此时当我们在调用 bar 函数时，参数建议就会告诉我们需要传入一个 string 类型的参数。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-4.gif)
+![VSCode JavaScript的支持](image/js-nodejs-4.gif)
 
 VS Code 里的 JavaScript 语言服务，会读取 JavaScript 文件里的 JSDoc 注释，然后根据注释里提供的类型信息，来对类型进行检查和建议。所以，如果你希望给你的 JavaScript 项目增加类型，并且有比较好的开发体验，JSDoc 就是一个不错的选择。关于更多 JSDoc 的知识，请参考[文档](http://usejsdoc.org/about-getting-started.html)。
 
@@ -148,13 +148,13 @@ JavaScript
 
 添加完这段引用后，当我们输入 `_`. 时，VS Code 就会立刻给我们建议 lodash 里提供的各种函数了。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-6.gif)
+![VSCode JavaScript的支持](image/js-nodejs-6.gif)
 
 在上面的动图中，你可以看到，除了建议列表，在输入参数时，我们还可以看到参数类型建议和相关的文档信息。
 
 而如果我们在 lodash 的这个函数上运行“跳转定义”命令，会发现 VS Code 跳转到了 lodash 对应的 `d.ts` 文件（`object.d.ts`）中。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-7.gif)
+![VSCode JavaScript的支持](image/js-nodejs-7.gif)
 
 通过上面的两个例子，相信你已经明白了，虽然我们没有书写 TypeScript，但是 VS Code 会通过查找模块相关的 `d.ts` 文件，来努力给我们提供类型相关的建议。而我们也可以通过书写 JSDoc 格式的注释，主动地给 VS Code 提供类型信息。
 
@@ -196,7 +196,7 @@ JavaScript
 
 比如，我们输入 bar() ，就能看到错误信息 ：`[ts]` 应有 1 个参数，但获得 0 个。而如果我们输入 bar(1)，则能看到： `[ts]` 类型“1”的参数不能赋给类型“string”的参数。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-8.gif)
+![VSCode JavaScript的支持](image/js-nodejs-8.gif)
 
 有了 ts-check后，我们就可以一个文件一个文件地给代码添加类型信息，然后为这个文件单独开启错误检查了。这样既不用担心全部迁移 TypeScript 带来的工作量和各种阻力，也能享受到类型系统所带来的好处了。
 
@@ -216,7 +216,7 @@ export function app() {
 
 JavaScript
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-9.png)
+![VSCode JavaScript的支持](image/js-nodejs-9.png)
 
 而在 index.js 中，我们替换掉 lodash 的引用，而引用 app 这个模块。
 
@@ -228,7 +228,7 @@ JavaScript
 
 引用后，当我们在 index.js 书写代码时，就能够得到 app 这个函数的提示了。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-10.gif)
+![VSCode JavaScript的支持](image/js-nodejs-10.gif)
 
 对于 app.js 这个模块，VS Code 的处理思路跟处理 lodash 那个 npm 包的引用是一样的。VS Code 先是通过 ./app 这个相对路径找到模块，然后看这个模块里 export 哪些函数和对象，接着在 index.js 提供提示。
 
@@ -254,7 +254,7 @@ JavaScript
 
 此时，在 VS Code 的编辑器里，我们已经能看到错误提示了。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-11.png)
+![VSCode JavaScript的支持](image/js-nodejs-11.png)
 
 ## jsconfig
 
@@ -282,11 +282,11 @@ JSON
 
 有了这个文件之后，VS Code 的 JavaScript 语言服务立刻就找到 app 这个模块了。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-12.png)
+![VSCode JavaScript的支持](image/js-nodejs-12.png)
 
 jsconfig 甚至还允许指定多个文件夹依次进行模块的查找。下面我们创建一个文件夹 common，然后把 app.js 挪入到 common 中。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-13.png)
+![VSCode JavaScript的支持](image/js-nodejs-13.png)
 
 然后在 jsconfig 中，进行如下的修改：
 
@@ -314,7 +314,7 @@ JSON
 
 我们在上面的 jsconfig 里添加一个 paths 属性，这里面就是对模块路径的映射。VS Code 会阅读这些映射，依次去寻找模块。此时当我们再打开 index.js ，将鼠标移动到 require(‘app’) 代码上时，我们能够看到，此时 VS Code 正确地将 app 这个模块定位到了 common/app.js 这个文件。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-14.png)
+![VSCode JavaScript的支持](image/js-nodejs-14.png)
 
 在前面的专栏里，我们在介绍 VS Code 的智能语言服务功能时，有读者提了一个非常好的问题，那就是如果项目中使用了 Webpack 而且 Webpack 中设置了 resolve，那么 VS Code 里的代码跳转就不工作了。相信现在你应该已经明白是为什么了，如果你的项目里为 Webpack 做了特殊的模块地址映射，那么你也需要在 jsconfig 里做同样的映射，这样 VS Code 就知道如何找到模块了。
 
@@ -324,7 +324,7 @@ JSON
 
 首先我们把 index.js 最上面的模块引用删除。然后在 index.js 的末尾，输入 app() 这段代码。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-15.gif)
+![VSCode JavaScript的支持](image/js-nodejs-15.gif)
 
 你可以看到，VS Code 自动为我们添加了模块的引用。这是因为 VS Code 已经知道当前项目里有哪些模块，每个模块提供了哪些方法，当你使用它们时，就会帮你将引用填入文件开头。
 
@@ -336,7 +336,7 @@ JavaScript 的模块地址很多都是跟文件地址相关的，阅读性很好
 
 下面我们把 app.js 从 common 这个文件夹下，移动到根目录下。
 
-![VSCode JavaScript的支持](https://img.geek-docs.com/vscode/language/js-nodejs-16.gif)
+![VSCode JavaScript的支持](image/js-nodejs-16.gif)
 
 从上面的动图中，你能够看到，VS Code 会问你是否要自动修改模块的引用，在选择“是”之后，VS Code 就会把 app 这个模块的引用地址，从 “common/app” 改成了 “app”。是不是非常实用呢？
 

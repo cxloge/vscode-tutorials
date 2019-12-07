@@ -33,7 +33,7 @@ JSON
 
 此时我们选择 npm install 这条命令的话，VS Code 就会打开一个集成终端，然后运行这条脚本。
 
-![VSCode 如何使用自动任务检测](https://img.geek-docs.com/vscode/task-system/workflow-01-1.gif)
+![VSCode 如何使用自动任务检测](image/workflow-01-1.gif)
 
 在上面的动图中，除了 npm 的两条任务，我们还能看到 typescript 关于编译的两条任务，这是因为当前文件夹下有 `tsconfig` 文件，VS Code 觉得这是一个 typescript 项目，所以进行了自动任务检测。
 

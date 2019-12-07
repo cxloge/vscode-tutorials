@@ -4,8 +4,8 @@
 
 我们还是把鼠标移动到示例代码的第五行 foo 上，然后按下 Cmd 键，这时候 foo下面出现了一个下划线。然后当我们按下鼠标左键，就跳转到了 foo函数的定义处。
 
-![通过Cmd键和鼠标左键，跳转到函数定义处，跳转到函数定义处d](https://img.geek-docs.com/vscode/mouse-operation/jump-to-function-define.gif)
+![通过Cmd键和鼠标左键，跳转到函数定义处，跳转到函数定义处d](image/jump-to-function-define.gif)
 
 当我们在编写 Markdown 这样的非编程语言的文档时，也可以通过 Cmd + 鼠标左键（Windows 上是 Ctrl + 鼠标左键）来打开超级链接。
 
-![通过Cmd键和鼠标左键，打开超级链接](https://img.geek-docs.com/vscode/mouse-operation/open-hyper-link.gif)
+![通过Cmd键和鼠标左键，打开超级链接](image/open-hyper-link.gif)
