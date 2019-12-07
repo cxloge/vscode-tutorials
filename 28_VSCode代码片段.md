@@ -17,13 +17,13 @@
 
 首先，我们打开命令面板，搜索“**配置用户代码片段**”（Configure User Snippets）并且执行。这时候我们会看到一个列表，让我们选择语言。这里我们依然选择 JavaScript 作为我们的示例语言，不用担心，代码都是非常简单和易于理解的。
 
-![命令面板，搜索“配置用户代码片段”并且执行](https://img.geek-docs.com/vscode/code-snippet/01.png)
+![命令面板，搜索“配置用户代码片段”并且执行](image/code-snippet/01.png)
 
 命令面板，搜索“配置用户代码片段”并且执行
 
 选择完语言后，我们就能看到一个 JSON 文件被打开了，这个文件里的内容，现在都是被注释掉的。我们可以选中第七行到第十四行，按下 `Cmd+ /` 取消注释。
 
-![JavaScript 代码片段模版](https://img.geek-docs.com/vscode/code-snippet/02.png)
+![JavaScript 代码片段模版](image/code-snippet/02.png)
 
 JavaScript 代码片段模版
 
@@ -52,7 +52,7 @@ JavaScript
 
 比如现在我们可以打开一个 JavaScript 文件（还以之前的一段代码为例），然后输入 log，你就能够在建议列表里看到 `Print to console` 这个建议。
 
-![输入 log 即可看到 Print to console 代码片段](https://img.geek-docs.com/vscode/code-snippet/03.png)
+![输入 log 即可看到 Print to console 代码片段](image/code-snippet/03.png)
 
 输入 log 即可看到 Print to console 代码片段
 

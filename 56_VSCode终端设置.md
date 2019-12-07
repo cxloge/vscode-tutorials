@@ -34,4 +34,4 @@
 
 在下图中，我们能够轻松的看出，我的 Shell 现在是在 vscode-sample 这个文件夹下，同时这个项目是使用 Git 进行版本管理的，当前的分支是 master，你还能够看到特殊的符号。这里我使用的是 zsh 和 oh-my-zsh 插件，你也可以试试。对了，我在 Windows 上会使用 Posh-Git 来完成类似的效果。
 
-![VSCode 终端设置](https://img.geek-docs.com/vscode/terminal/terminal-15.png)
+![VSCode 终端设置](image/terminal/terminal-15.png)

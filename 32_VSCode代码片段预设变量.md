@@ -18,6 +18,6 @@ VSCode代码片段专题包含如下内容：
 
 除了剪切板，VS Code 还支持其他数十个预设值，大家可以按需自行[查看文档](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_variables)，
 
-![VSCode预设变量](https://img.geek-docs.com/vscode/code-snippet/08.png)
+![VSCode预设变量](image/code-snippet/08.png)
 
 VSCode预设变量

@@ -37,6 +37,6 @@ for (var j = 0; j < 5; j++) {
 
 JavaScript
 
-![插入了 log 这个代码片段，然后将循环的 index 换成了 j](https://img.geek-docs.com/vscode/code-snippet/07.gif)
+![插入了 log 这个代码片段，然后将循环的 index 换成了 j](image/code-snippet/07.gif)
 
 插入了 log 这个代码片段，然后将循环的 index 换成了 j。

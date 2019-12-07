@@ -41,7 +41,7 @@ for (var i = 0; i < 5; i++) {
 
 JavaScript
 
-![插入代码片段后，无需更改占位符](https://img.geek-docs.com/vscode/code-snippet/05.gif)
+![插入代码片段后，无需更改占位符](image/code-snippet/05.gif)
 
 插入代码片段后，无需更改占位符
 
@@ -55,7 +55,7 @@ for (var j = 0; j < 5; j++) {
 
 JavaScript
 
-![插入代码片段后，将占位符改为 j](https://img.geek-docs.com/vscode/code-snippet/06.gif)
+![插入代码片段后，将占位符改为 j](image/code-snippet/06.gif)
 
 插入代码片段后，将占位符改为 j
 

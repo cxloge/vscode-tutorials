@@ -23,7 +23,7 @@ image/quick-start-11.gif
 
 
 
-https://img.geek-docs.com/vscode
+image
 image
 image
 image
